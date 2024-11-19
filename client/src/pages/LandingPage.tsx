@@ -1,6 +1,6 @@
-import HeroSection from "@/components/HeroSection";
-import FeatureSection from "@/components/FeatureSection";
-import SignupForm from "@/components/SignupForm";
+import HeroSection from "../components/HeroSection";
+import FeatureSection from "../components/FeatureSection";
+import SignupForm from "../components/SignupForm";
 
 export default function LandingPage() {
   return (

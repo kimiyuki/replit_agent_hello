@@ -4,7 +4,7 @@ import path from "path";
 import cors from "cors";
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 5000;
 
 // Enable CORS for development
 app.use(cors());
@@ -21,6 +21,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/dist/index.html"));
 });
 
-app.listen(PORT, "0.0.0.0", () => {
+app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
